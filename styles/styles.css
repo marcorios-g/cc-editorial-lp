@@ -1,0 +1,848 @@
+/* DESKTOP FIRST */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* FONTS */
+
+@font-face {
+    font-family: 'frank ruhl libre';
+    src: url(../fonts/frank_ruhl_libre/FrankRuhlLibre-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'avenir next';
+    src: url(../fonts/avenir-next/AvenirNextLTPro-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'avenir next';
+    src: url(../fonts/avenir-next/avenir-next-demibold.ttf);
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'avenir next';
+    src: url(../fonts/avenir-next/AvenirNextLTPro-Regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+/* FONT STYLES */
+
+body{
+    font-family: avenir next;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #333;
+}
+
+h1{
+    font-family: frank ruhl libre;
+    font-size: 32px;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+p{
+    line-height: 30px;
+}
+
+button{
+    font-family: avenir next;
+    border: hidden;
+}
+
+
+
+/* COMPONENTS */
+
+.btn-primary{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: #20964F;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+    border-radius: 8px;
+    border: hidden;
+}
+
+.btn-primary:hover{
+    background-color: #116F36;
+}
+
+.btn-secondary{
+    background-color: #EDF6FF;
+    color: #04679A;
+}
+
+.btn-secondary:hover{
+    background-color: #B7DBFF;
+}
+
+.cta-block{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.below-cta{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.below-cta span{
+    font-size: 12px;
+    line-height: 16px;
+    color: #767676;
+    text-align: center;
+}
+
+.below-cta a{
+    font-size: 12px;
+    line-height: 16px;
+    color: #006FCF;
+    text-align: center;
+    text-decoration: none;
+}
+
+.below-cta a:hover{
+    text-decoration: underline;
+}
+
+.offer-features{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #EDF6FF;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.offer-features div{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.offer-features img{
+    width: 24px;
+}
+
+.offer-features p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+}
+
+
+
+/* LAYOUT PADDING */
+
+#nav-bar, .ad-disclosure, main, .editorial-note, footer{
+    padding: 0 24px;
+}
+
+
+
+/* NAV BAR */
+
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 56px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+/* GENERAL WRAPPER */
+
+.wrapper{
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+
+/* AD DISCLOSURE */
+
+.ad-disclosure{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.ad-disclosure a{
+    color: #52826C;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+
+
+/* ARTICLE */
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.article-container{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+
+
+/* LEFT SECTION */
+
+article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main-article{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.article-name{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/* DATE - AUTHOR */
+
+.date-author{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+time{
+    font-size: 16px;
+    color: #6B6B6B;
+    padding-right: 8px;
+    border-right: 1px solid #6B6B6B;
+}
+
+.author{
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    color: #6B6B6B;
+}
+
+.date-author span{
+    color: #04679A;
+}
+
+
+
+/* CRITICS' TIP */
+
+blockquote{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    background-color: #FFF6D9;
+    border-radius: 8px;
+}
+
+blockquote header{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #FFDA87;
+}
+
+blockquote img{
+    width: 40px;
+}
+
+blockquote span{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+blockquote p{
+    font-size: 14px;
+    line-height: 150%;
+}
+
+
+
+/* HERO IMAGE */
+
+figure{
+    display: flex;
+}
+
+figure img{
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+/* IN-CONTENT MAIN OFFER */
+
+.in-content-main-offer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    align-self: flex-start;
+    background-color: white;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.header-img-pn-cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 59px;
+}
+
+.in-content-img{
+    width: 192px;
+    height: 121px;
+}
+
+.pn-cta{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+
+
+/* TEXT BLOCKS */
+
+.article-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.article-text a{
+    font-weight: 600;
+    color: #04679A;
+    text-decoration: none;
+}
+
+.article-text a:hover{
+    color: #0890d3;
+}
+
+em{
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+
+/* MID ARTICLE OFFER */
+
+.mid-article-offer{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    background-color: #1BA3A2;
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin-top: 24px;
+}
+
+.mid-article-offer header{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+.mid-article-offer h2{
+    font-family: frank ruhl libre;
+    font-size: 25px;
+    line-height: 32px;
+    color: white;
+}
+
+.mid-article-offer h3{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: white;
+}
+
+.mid-offer-card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: -36px;
+}
+
+#mid-offer-span{
+    color: white;
+}
+
+#mid-offer-a{
+    color: white;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+
+/* OTHER OFFERS */
+
+.other-offers{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.individual-offer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 40px;
+    border-top: 1px solid #D6D6D6;
+}
+
+.offer-information{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+
+
+/* CARD DETAILS, LEFT SECTION */
+
+.card-details{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-details h3{
+    text-align: center;
+}
+
+.other-offer-card{
+    padding: 0 24px;
+}
+
+.other-offer-features{
+    padding: unset;
+    padding: 8px;
+    gap: unset;
+    gap: 12px;
+}
+
+.other-offer-features p{
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+.other-offer-features span{
+    font-weight: 400;
+}
+
+.other-view-details{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #04679A;
+    text-decoration: none;
+    text-align: center;
+}
+
+.other-view-details:hover{
+    text-decoration: underline;
+}
+
+
+
+/* CARD DETAILS, RIGHT SECTION */
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.btn-apply{
+    width: unset;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-weight: 400;
+    padding: unset;
+    padding: 5px 12px;
+    gap: unset;
+    gap: 14px;
+}
+
+
+
+/* ASIDE */
+
+aside{
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: flex-start;
+    background-color: white;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    position: sticky;
+    top: 40px;
+    overflow: hidden;
+}
+
+.aside-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 16px 0;
+}
+
+.main-offer-card{
+    padding: 0 48px;
+}
+
+.aside-content h3{
+    text-align: center;
+}
+
+.view-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 16px;
+    background-color: #f2f2f2;
+    border: hidden;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.view-details:hover{
+    background-color: #e4e4e4;
+}
+
+
+
+/* EDITORIAL NOTE */
+
+.editorial-note{
+    display: flex;
+    justify-content: center;
+}
+
+.ed-note{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 0;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin: 80px 0;
+}
+
+.ed-note p{
+    font-size: 12px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.ed-note span{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #666666;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #464646;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 48px 0;
+}
+
+
+
+/* LEFT SECTION */
+
+.left-wrapper{
+    max-width: 350px;
+    width: 100%;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-logo{
+    margin-top: 15px;
+    margin-right: 175px;
+    width: 175px;
+}
+
+.footer-left small{
+    font-size: 14px;
+}
+
+.sitemap{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.sitemap a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.sitemap a:hover{
+    text-decoration: underline;
+}
+
+.sitemap-divider{
+    padding-right: 8px;
+    border-right: 1px solid white;
+}
+
+
+
+/* RIGHT SECTION */
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-right span{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.footer-right p{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+
+/* DESKTOP */
+
+@media (min-width: 991px){
+    .in-content-main-offer{
+        display: none;
+    }
+}
+
+
+
+/* TABLET */
+
+@media (max-width: 991px){
+    #nav-bar, .ad-disclosure, main, .editorial-note, footer{
+        padding: 0 40px;
+    }
+
+    aside{
+        display: none;
+    }
+
+    .mid-article-offer{
+        padding: 12px 40px;
+    }
+
+    .card-details{
+        position: sticky;
+        align-self: flex-start;
+        top: 40px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        padding: 16px 0 32px;
+    }
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 639px){
+    #nav-bar, .ad-disclosure, main, .editorial-note, footer{
+        padding: 0 18px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .date-author time, .date-author .author{
+        font-size: 14px;
+    }
+
+    figure{
+        display: none;
+    }
+
+    .header-img-pn-cta{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .in-content-img{
+        width: 192px;
+        height: 121px;
+    }
+
+    .article-text{
+        gap: 8px;
+    }
+
+    .mid-article-offer{
+        flex-direction: column;
+        padding: 12px 16px;
+    }
+
+    #a{
+        order: 2;
+    }
+
+    #b{
+        order: 1;
+    }
+
+    .mid-offer-card img{
+        width: 240px;
+        margin: 0 auto;
+    }
+
+    .btn-secondary{
+        height: 40px;
+    }
+
+    .btn-secondary img{
+        width: 24px;
+        margin: unset;
+    }
+
+    .mid-article-offer h2{
+        font-size: 24px;
+        letter-spacing: 0;
+    }
+
+    .mid-article-offer h3{
+        font-size: 18px;
+    }
+
+    .offer-information{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .other-offer-card{
+        width: 186px;
+        padding: 0;
+    }
+
+    .left-wrapper{
+        max-width: unset;
+        width: 100%;
+    }
+
+    .card-details{
+        align-items: center;
+        width: 100%;
+    }
+
+    .other-offer-features{
+        width: 100%;
+    }
+}
